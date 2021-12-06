@@ -1,11 +1,10 @@
 "use strict";
 const express = require("express");
-//const db = require('../models/db');
-//const user = require('../models/user');
 
-const productsRouter = require('./products.router');
-const usersRouter = require('./users.router');
-const categoriesRouter = require('./categories.router');
+
+const productsRouter = require('./product.route');
+const usersRouter = require('./user.route');
+const categoriesRouter = require('./category.route');
 
 function routerApi(app) {
   const router = express.Router();
